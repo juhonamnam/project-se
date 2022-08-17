@@ -1,0 +1,74 @@
+{
+  "extends": "next/core-web-vitals",
+  "overrides": [
+    {
+      "files": ["**/*.ts?(x)"],
+      "rules": {
+        "react/display-name": "off",
+        "react/no-children-prop": "off",
+        "no-else-return": ["error"],
+        "no-console": [
+          2,
+          {
+            "allow": ["warn", "error"]
+          }
+        ],
+        "no-var": ["error"],
+        "prefer-spread": ["error"],
+        "no-unused-expressions": ["error"],
+        "no-new-func": ["error"],
+        "no-labels": ["error"],
+        "no-extend-native": ["error"],
+        "no-eval": ["error"],
+        "no-constructor-return": ["error"],
+        "no-unsafe-optional-chaining": ["error"],
+        "no-unreachable-loop": ["error"],
+        "no-unreachable": ["error"],
+        "no-import-assign": ["error"],
+        "no-param-reassign": ["error"],
+        "no-use-before-define": "off",
+        "eqeqeq": "warn",
+        "padding-line-between-statements": [
+          "warn",
+          {
+            "blankLine": "always",
+            "prev": "*",
+            "next": "return"
+          }
+        ],
+        "max-depth": [
+          "warn",
+          {
+            "max": 6
+          }
+        ],
+        "no-unneeded-ternary": [
+          "error",
+          {
+            "defaultAssignment": false
+          }
+        ],
+        "sort-imports": "off",
+        "import/order": "off",
+        "semi": ["warn", "never"],
+        "quotes": [
+          "warn",
+          "single",
+          {
+            "avoidEscape": true,
+            "allowTemplateLiterals": true
+          }
+        ],
+        "object-curly-spacing": ["warn", "always"],
+        "array-bracket-spacing": ["warn", "never"],
+        "computed-property-spacing": [
+          "warn",
+          "never",
+          {
+            "enforceForClassMembers": true
+          }
+        ]
+      }
+    }
+  ]
+}
